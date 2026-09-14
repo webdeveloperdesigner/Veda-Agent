@@ -137,7 +137,7 @@ This project is configured for **Vercel** serverless deployment with zero backgr
 npm run deploy
 ```
 
-Live Demo: [https://veda-ivory.vercel.app](https://veda-ivory.vercel.app)
+Live Demo: [https://vedaagentblog.vercel.app](https://vedaagentblog.vercel.app) | [https://veda-ivory.vercel.app](https://veda-ivory.vercel.app)
 
 ---
 

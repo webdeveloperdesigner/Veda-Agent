@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 
 const Hero = ({ onStart }) => {
+  const [flipWord, setFlipWord] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFlipWord((prev) => !prev);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -20,7 +29,22 @@ const Hero = ({ onStart }) => {
 
         <h1 className="scroll-reveal text-[clamp(3.5rem,10vw,8rem)] font-black leading-[0.9] tracking-[-0.04em] text-black mb-10">
           <span className="block text-[clamp(2rem,5vw,4rem)] text-black/30 mb-2 tracking-tighter">INDIA'S #1</span>
-          The future of knowledge<br />is <span className="text-brand-orange">autonomous.</span>
+          The future of{' '}
+          <span className="inline-flex items-center justify-center relative [perspective:1000px] px-1">
+            <span className={`inline-block transition-transform duration-700 [transform-style:preserve-3d] ${
+              flipWord ? '[transform:rotateX(180deg)]' : '[transform:rotateX(0deg)]'
+            }`}>
+              {/* Front Side: knowledge */}
+              <span className="block [backface-visibility:hidden] text-black">
+                knowledge
+              </span>
+              {/* Back Side: writing */}
+              <span className="absolute inset-0 flex items-center justify-center [backface-visibility:hidden] [transform:rotateX(180deg)] text-black">
+                writing
+              </span>
+            </span>
+          </span>
+          <br />is <span className="text-brand-orange">autonomous.</span>
         </h1>
 
         <p className="scroll-reveal text-lg md:text-xl text-black/50 max-w-2xl mx-auto mb-16 font-medium leading-relaxed">

@@ -49,7 +49,7 @@ const Navbar = () => {
             Architecture
             <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-black rounded-full transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="https://github.com/Arfazrll/Swarm-Agent-Orchestrator" target="_blank" rel="noreferrer"
+          <a href="https://github.com/webdeveloperdesigner/Veda-Agent" target="_blank" rel="noreferrer"
              className="hover:text-black transition-colors duration-200 flex items-center gap-1.5 relative group">
             <FiGithub className="w-4 h-4" />
             GitHub

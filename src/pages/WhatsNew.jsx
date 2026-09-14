@@ -4,39 +4,53 @@ import { gsap } from 'gsap';
 
 const updates = [
   {
-    version: "v1.1.0",
-    date: "June 2026",
-    title: "Sovereign Noir UI Redesign",
+    version: "v1.2.0",
+    date: "September 2026",
+    title: "Official GitHub Repository Launch",
     type: "Major",
     changes: [
-      "Completely overhauled the frontend from Vue to React JS (Vite).",
-      "Implemented 'Sovereign Noir' premium aesthetic with glassmorphism and GSAP animations.",
-      "Added fluid dynamic typography and completely responsive bento-grid layouts.",
-      "Introduced the animated VEDA Vision dark-mode section."
+      "Uploaded full source code to GitHub (webdeveloperdesigner/Veda-Agent).",
+      "Added direct Documentation links pointing straight to GitHub README.",
+      "Fixed page routing (SPA 404 issue) for direct page links like /upcoming and /whats-new.",
+      "Added custom Error pages (404 Page Not Found & 500 Server Error) for smooth browsing.",
+      "Built automatic React Error Boundary protection to prevent application crashes.",
+      "Simplified update notes so everything is clear and easy to read."
+    ]
+  },
+  {
+    version: "v1.1.0",
+    date: "June 2026",
+    title: "Brand New Look & Better Design",
+    type: "Major",
+    changes: [
+      "Redesigned the website with React JS for faster loading and super smooth screens.",
+      "Added modern glass visual effects, smooth animations, and clean cards.",
+      "Made the layout look great on all mobile screens, tablets, and laptops.",
+      "Added a new interactive VEDA Vision section."
     ]
   },
   {
     version: "v1.0.5",
     date: "May 2026",
-    title: "Dual-Model Architecture",
+    title: "Dual AI Engine Power",
     type: "Feature",
     changes: [
-      "Added support for both Groq (Llama 3) and Google Gemini (1.5 Flash).",
-      "Dynamic prompt routing based on user model selection.",
-      "Optimized payload chunking for PDF generation.",
-      "Improved orchestrator error handling and fallbacks."
+      "Now you can pick between two top AI engines: Groq (Llama 3.3) or Google Gemini.",
+      "Smart automatic switching ensures you get fast and accurate results.",
+      "Faster PDF creation with quick report generation.",
+      "Better error handling so your AI tasks run cleanly without stopping."
     ]
   },
   {
     version: "v1.0.0",
     date: "April 2026",
-    title: "Initial Alpha Release",
+    title: "First Release of VEDA Agent",
     type: "Launch",
     changes: [
-      "Launched the core Pydantic AI Swarm architecture.",
-      "Sequential agent pipeline (Planner -> Researcher -> Writer).",
-      "In-memory job tracking system.",
-      "Markdown to PDF export pipeline."
+      "Launched the smart Multi-Agent AI system to create full blogs automatically.",
+      "Simple 3-step process: Planner outlines, Researcher gathers facts, Writer writes content.",
+      "Instant PDF downloading for all generated reports.",
+      "Simple live progress updates while the AI works."
     ]
   }
 ];
