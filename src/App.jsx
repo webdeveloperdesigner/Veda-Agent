@@ -10,6 +10,7 @@ import WhatsNew from './pages/WhatsNew';
 import Versions from './pages/Versions';
 import Status from './pages/Status';
 import Changelog from './pages/Changelog';
+import Login from './pages/Login';
 import NotFound from './pages/NotFound';
 import ServerError from './pages/ServerError';
 
@@ -23,6 +24,7 @@ const App = () => {
           <main className="relative z-10 flex-grow">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
               <Route path="/upcoming" element={<Upcoming />} />
               <Route path="/whats-new" element={<WhatsNew />} />
               <Route path="/versions" element={<Versions />} />

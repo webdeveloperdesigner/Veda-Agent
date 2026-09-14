@@ -4,17 +4,28 @@ import { gsap } from 'gsap';
 
 const updates = [
   {
+    version: "v1.2.5",
+    date: "September 2026",
+    title: "Mobile Optimization & Layout Polish",
+    type: "Major",
+    changes: [
+      "Added responsive mobile hamburger menu for smooth navigation on phones & tablets.",
+      "Added 3D card flip animation in the main Hero section (knowledge ↔ writing).",
+      "Fixed Pydantic code box overlap on iPad Pro / 1024px tablet screens.",
+      "Optimized footer copyright flip banner for small 320px phone displays."
+    ]
+  },
+  {
     version: "v1.2.0",
     date: "September 2026",
     title: "Official GitHub Repository Launch",
-    type: "Major",
+    type: "Release",
     changes: [
       "Uploaded full source code to GitHub (webdeveloperdesigner/Veda-Agent).",
       "Added direct Documentation links pointing straight to GitHub README.",
       "Fixed page routing (SPA 404 issue) for direct page links like /upcoming and /whats-new.",
       "Added custom Error pages (404 Page Not Found & 500 Server Error) for smooth browsing.",
-      "Built automatic React Error Boundary protection to prevent application crashes.",
-      "Simplified update notes so everything is clear and easy to read."
+      "Built automatic React Error Boundary protection to prevent application crashes."
     ]
   },
   {

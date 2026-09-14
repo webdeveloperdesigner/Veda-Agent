@@ -5,6 +5,24 @@ import { gsap } from 'gsap';
 const changelogEntries = [
   {
     date: "Sept 14, 2026",
+    version: "v1.2.5",
+    type: "Fix",
+    badgeColor: "bg-blue-500/10 text-blue-600 border-blue-500/20",
+    title: "iPad Pro Tablet Layout & Pydantic Card Overlap Fix",
+    description: "Upgraded absolute breakpoint to xl in Features.jsx to ensure Pydantic Validation schema box stacks cleanly below text without overlapping on 1024px tablet screens.",
+    tags: ["Responsiveness", "CSS Grid", "Bento"]
+  },
+  {
+    date: "Sept 14, 2026",
+    version: "v1.2.5",
+    type: "UI",
+    badgeColor: "bg-brand-orange/10 text-brand-orange border-brand-orange/20",
+    title: "Hero 3D Text Flip Animation (knowledge ↔ writing)",
+    description: "Added 3D card flip animation in Hero.jsx alternating between 'knowledge' and 'writing' every 3 seconds with backface visibility isolation.",
+    tags: ["Animation", "3D", "Hero"]
+  },
+  {
+    date: "Sept 14, 2026",
     version: "v1.2.0",
     type: "Feature",
     badgeColor: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20",

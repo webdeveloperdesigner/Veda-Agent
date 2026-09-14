@@ -4,9 +4,22 @@ import { gsap } from 'gsap';
 
 const versionData = [
   {
-    version: "v1.2.0",
+    version: "v1.2.5",
     releaseDate: "Sept 14, 2026",
     tag: "Latest Release",
+    commit: "f82d90a",
+    status: "Stable",
+    highlights: [
+      "Responsive Mobile Hamburger navigation menu for phones & tablets.",
+      "3D card flip animation in Hero heading (knowledge ↔ writing).",
+      "Tablet grid overlap fix for Pydantic Validation Bento card on iPad Pro (1024px)."
+    ],
+    githubUrl: "https://github.com/webdeveloperdesigner/Veda-Agent/tree/main"
+  },
+  {
+    version: "v1.2.0",
+    releaseDate: "Sept 14, 2026",
+    tag: "Patch Release",
     commit: "a662c5c",
     status: "Stable",
     highlights: [
@@ -15,7 +28,7 @@ const versionData = [
       "Added custom 404 Not Found & 500 Server Error pages.",
       "Global React Error Boundary protection added."
     ],
-    githubUrl: "https://github.com/webdeveloperdesigner/Veda-Agent/tree/v1.2.0"
+    githubUrl: "https://github.com/webdeveloperdesigner/Veda-Agent/tree/main"
   },
   {
     version: "v1.1.0",

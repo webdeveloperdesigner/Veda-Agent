@@ -8,16 +8,16 @@ const Workspace = ({ topic, setTopic, loading, onSubmit, model, setModel }) => {
         <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black mb-4">Workspace.</h2>
         <p className="text-black/40 font-bold text-base">Initialize VEDA Agent with your directive.</p>
         
-        <div className="mt-8 flex justify-center items-center gap-4">
+        <div className="mt-8 flex flex-wrap justify-center items-center gap-3 sm:gap-4">
           <button 
             onClick={() => setModel('groq')}
-            className={`px-6 py-2.5 rounded-full font-bold text-sm transition-all border-2 ${model === 'groq' ? 'bg-black text-white border-black shadow-md' : 'bg-transparent text-neutral-400 border-neutral-200 hover:border-black/30 hover:text-black'}`}
+            className={`px-5 sm:px-6 py-2 sm:py-2.5 rounded-full font-bold text-xs sm:text-sm transition-all border-2 ${model === 'groq' ? 'bg-black text-white border-black shadow-md' : 'bg-transparent text-neutral-400 border-neutral-200 hover:border-black/30 hover:text-black'}`}
           >
             VEDA Groq Engine
           </button>
           <button 
             onClick={() => setModel('gemini')}
-            className={`px-6 py-2.5 rounded-full font-bold text-sm transition-all border-2 ${model === 'gemini' ? 'bg-black text-white border-black shadow-md' : 'bg-transparent text-neutral-400 border-neutral-200 hover:border-black/30 hover:text-black'}`}
+            className={`px-5 sm:px-6 py-2 sm:py-2.5 rounded-full font-bold text-xs sm:text-sm transition-all border-2 ${model === 'gemini' ? 'bg-black text-white border-black shadow-md' : 'bg-transparent text-neutral-400 border-neutral-200 hover:border-black/30 hover:text-black'}`}
           >
             VEDA Gemini Engine
           </button>

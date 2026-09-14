@@ -55,7 +55,7 @@ const Hero = ({ onStart }) => {
         <div className="scroll-reveal flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={onStart}
-            className="group relative bg-black text-white px-10 py-5 rounded-full font-black text-base flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(0,0,0,0.3)] active:scale-95 overflow-hidden"
+            className="w-full sm:w-auto group relative bg-black text-white px-8 sm:px-10 py-4 sm:py-5 rounded-full font-black text-base flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(0,0,0,0.3)] active:scale-95 overflow-hidden"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></span>
             <span className="relative z-10 flex items-center gap-2">
@@ -66,7 +66,7 @@ const Hero = ({ onStart }) => {
 
           <button
             onClick={() => scrollTo('architecture')}
-            className="group relative px-10 py-5 rounded-full font-black text-base border-2 border-black/20 bg-white text-black transition-all duration-300 hover:border-black hover:shadow-md active:scale-95 overflow-hidden"
+            className="w-full sm:w-auto group relative px-8 sm:px-10 py-4 sm:py-5 rounded-full font-black text-base border-2 border-black/20 bg-white text-black transition-all duration-300 hover:border-black hover:shadow-md active:scale-95 overflow-hidden"
           >
             <span className="absolute inset-0 bg-black scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100 rounded-full"></span>
             <span className="relative z-10 group-hover:text-white transition-colors duration-300">View Architecture</span>
